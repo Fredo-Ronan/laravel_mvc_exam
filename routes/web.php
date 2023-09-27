@@ -41,8 +41,4 @@ Route::get('/form', function() {
         "prodi" => "Informatika"
     ];
     return view('form', $dataForm);
-})->name('form');
-
-Route::get('/processResetForm', function() {
-    return view('processResetForm');
 });
