@@ -96,7 +96,7 @@
     </header>
 
     <div class="data-container" style="padding-top: 4rem;">
-        <div class="card mb-3" style="max-width: 800px;">
+        <div class="card mb-3" style="max-width: 800px; box-shadow: 0px 3px 15px -3px rgba(0,0,0,0.2);">
             <div class="row g-0">
                 <div class="col-md-4" style="display: flex; justify-content: center; align-items: center;">
                     <img src="https://avatars.githubusercontent.com/u/128687596?v=4" alt="profile_picture" width="200px" style="border: 4px solid black; border-radius: 50%; box-shadow: 4px 4px 15px -3px rgba(0,0,0,0.4);">
