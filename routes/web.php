@@ -14,5 +14,35 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/home', function () {
+    return view('home');
+});
+
+Route::get('/profil', function() {
+    return view('profil', [
+        "nama" => "Boniface Fredo Ronan Antolino",
+        "deskripsi" => "Seorang mahasiswa informatika UAJY",
+        "alamat" => "Jl.gabugan, Sleman, Yogyakarta",
+        "email" => "210711446@students.uajy.ac.id",
+        "telepon" => "082326988374",
+        "hobi" => "Bermain/Mendengarkan Musik"
+    ]);
+});
+
+Route::get('/form', function() {
+    $dataForm = [
+        "nama" => "Boniface Fredo Ronan Antolino",
+        "npm" => "210711446",
+        "email" => "210711446@students.uajy.ac.id",
+        "fakultas" => "Fakultas Teknologi Industri",
+        "prodi" => "Informatika"
+    ];
+    return view('form', $dataForm);
+})->name('form');
+
+Route::get('/processResetForm', function() {
+    return view('processResetForm');
 });
